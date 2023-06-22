@@ -6,16 +6,10 @@ class Base:
     def __init__(self):
         self._a = 2
 
-
-
 class Derived(Base):
     def __init__(self):
-        
         Base.__init__(self)
-        print("Calling  a protected member of base class: ",self._a)
-
         self._a=3
-        print("Calling a modified protected member outside class: ", self._a)
 
 
 
